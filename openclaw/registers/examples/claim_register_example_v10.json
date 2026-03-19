@@ -1,0 +1,52 @@
+{
+  "releaseId": "V10",
+  "generatedAtUtc": "2026-03-13T03:18:00Z",
+  "claims": [
+    {
+      "claimId": "CLM-V10-01",
+      "statement": "All nine agents now have concise operating contracts that define mission, authority, escalation, and expected artifacts.",
+      "status": "supported",
+      "ownerRole": "distinguished-scholar",
+      "supportingArtifacts": [
+        "/openclaw/agents/academy-lead/ROLE_CONTRACT.md",
+        "/openclaw/agents/distinguished-scholar/ROLE_CONTRACT.md",
+        "/openclaw/agents/senior-researcher-1/ROLE_CONTRACT.md",
+        "/openclaw/agents/senior-researcher-2/ROLE_CONTRACT.md",
+        "/openclaw/agents/junior-researcher-1/ROLE_CONTRACT.md",
+        "/openclaw/agents/junior-researcher-2/ROLE_CONTRACT.md",
+        "/openclaw/agents/peer-reviewer-1/ROLE_CONTRACT.md",
+        "/openclaw/agents/peer-reviewer-2/ROLE_CONTRACT.md",
+        "/openclaw/agents/reproducibility-chair/ROLE_CONTRACT.md"
+      ],
+      "linkedFindings": [
+        "PR1-ROLE-01",
+        "PR2-ROLE-01"
+      ],
+      "limitations": [
+        "Contracts remain conceptual and are not yet coupled to live runtime enforcement.",
+        "No automated completeness check is included in this release."
+      ],
+      "decisionNotes": "Accepted as a governance and packaging deepening claim rather than a runtime automation claim."
+    },
+    {
+      "claimId": "CLM-V10-02",
+      "statement": "The package now includes a machine-readable claim register that ties release statements to artifacts, findings, and limitations.",
+      "status": "supported",
+      "ownerRole": "senior-researcher-2",
+      "supportingArtifacts": [
+        "/openclaw/config/schemas/claim_register_schema_v1.json",
+        "/openclaw/registers/examples/claim_register_example_v10.json",
+        "/openclaw/dossiers/examples/V10_release_dossier_example.md"
+      ],
+      "linkedFindings": [
+        "PR2-CLAIM-01",
+        "RC-CLAIM-01"
+      ],
+      "limitations": [
+        "The claim register is authored by hand in this release.",
+        "No external validator or export pipeline is packaged."
+      ],
+      "decisionNotes": "Included because it improves inspectability of claims without overstating automation."
+    }
+  ]
+}

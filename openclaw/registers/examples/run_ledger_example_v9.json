@@ -1,0 +1,44 @@
+{
+  "release": "V9",
+  "runs": [
+    {
+      "runId": "all-v9-scholar-release-assembly-2026-03-13-01",
+      "release": "V9",
+      "stage": "release",
+      "role": "distinguished-scholar",
+      "objective": "Assemble one coherent release package with explicit finding and run registers.",
+      "inputs": [
+        "openclaw/templates/team_operating_contract.md",
+        "openclaw/dossiers/examples/V8_release_dossier_example.md"
+      ],
+      "outputs": [
+        "openclaw/templates/release_assembly_workflow.md",
+        "openclaw/registers/examples/finding_register_example_v9.json",
+        "openclaw/registers/examples/run_ledger_example_v9.json"
+      ],
+      "status": "completed",
+      "startedAt": "2026-03-13T00:05:00Z",
+      "endedAt": "2026-03-13T00:16:00Z",
+      "notesPath": "ROUND_NOTE_V9.md"
+    },
+    {
+      "runId": "all-v9-repro-audit-governance-2026-03-13-01",
+      "release": "V9",
+      "stage": "audit",
+      "role": "reproducibility-chair",
+      "objective": "Check whether the release package is inspectable with path-backed registers and explicit limitations.",
+      "inputs": [
+        "openclaw/config/openclaw_package_manifest_v9.json",
+        "openclaw/config/schemas/finding_register_schema_v1.json",
+        "openclaw/config/schemas/run_ledger_schema_v1.json"
+      ],
+      "outputs": [
+        "ROUND_NOTE_V9.md"
+      ],
+      "status": "completed",
+      "startedAt": "2026-03-13T00:16:00Z",
+      "endedAt": "2026-03-13T00:18:00Z",
+      "notesPath": "ROUND_NOTE_V9.md"
+    }
+  ]
+}

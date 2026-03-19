@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Claim Register Schema v1",
+  "type": "object",
+  "required": [
+    "releaseId",
+    "generatedAtUtc",
+    "claims"
+  ],
+  "properties": {
+    "releaseId": {
+      "type": "string"
+    },
+    "generatedAtUtc": {
+      "type": "string"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claimId",
+          "statement",
+          "status",
+          "supportingArtifacts",
+          "limitations",
+          "ownerRole"
+        ],
+        "properties": {
+          "claimId": {
+            "type": "string"
+          },
+          "statement": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "proposed",
+              "supported",
+              "qualified",
+              "rejected"
+            ]
+          },
+          "ownerRole": {
+            "type": "string"
+          },
+          "supportingArtifacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "linkedFindings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "decisionNotes": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

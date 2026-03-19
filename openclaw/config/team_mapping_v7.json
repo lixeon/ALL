@@ -1,0 +1,17 @@
+# Config Mapping v7
+
+{
+  "teamSize": 9,
+  "roles": [
+    "academy-lead",
+    "distinguished-scholar",
+    "senior-researcher-1",
+    "senior-researcher-2",
+    "junior-researcher-1",
+    "junior-researcher-2",
+    "peer-reviewer-1",
+    "peer-reviewer-2",
+    "reproducibility-chair"
+  ],
+  "controllerWorkspace": "/root/clawd/academic-lobster-lab/releases/V7/openclaw"
+}

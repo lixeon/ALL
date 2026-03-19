@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "name": "run-ledger",
+  "description": "Machine-readable ledger for OpenClaw research runs, audits, and review passes.",
+  "requiredFields": [
+    "runId",
+    "release",
+    "stage",
+    "role",
+    "objective",
+    "inputs",
+    "outputs",
+    "status",
+    "startedAt",
+    "endedAt",
+    "notesPath"
+  ],
+  "fieldNotes": {
+    "stage": "example values: proposal, execution, review, revision, audit, release",
+    "inputs": "array of artifact or instruction paths",
+    "outputs": "array of produced artifact paths",
+    "status": "allowed: planned, running, completed, blocked, superseded"
+  }
+}

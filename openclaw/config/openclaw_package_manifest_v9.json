@@ -1,0 +1,43 @@
+{
+  "release": "V9",
+  "packageName": "academic-lobster-lab-openclaw",
+  "focus": "machine-readable-workflow-governance-and-role-contract-deepening",
+  "sourceBase": "/root/clawd/academic-lobster-lab/releases/V9/openclaw",
+  "teamSize": 9,
+  "requiredPaths": [
+    "AGENTS.md",
+    "BOOTSTRAP.md",
+    "IDENTITY.md",
+    "README.md",
+    "SOUL.md",
+    "TOOLS.md",
+    "USER.md",
+    "agents/",
+    "config/",
+    "templates/",
+    "registers/"
+  ],
+  "newArtifacts": [
+    "agents/academy-lead/ROLE_CONTRACT.md",
+    "agents/distinguished-scholar/ROLE_CONTRACT.md",
+    "templates/role_contract_card_template.md",
+    "templates/release_assembly_workflow.md",
+    "config/schemas/finding_register_schema_v1.json",
+    "config/schemas/run_ledger_schema_v1.json",
+    "registers/examples/finding_register_example_v9.json",
+    "registers/examples/run_ledger_example_v9.json"
+  ],
+  "indexFiles": [
+    "../V9_MASTER_INDEX.md",
+    "../V9_RELEASE_NOTES.md",
+    "../ROUND_NOTE_V9.md"
+  ],
+  "validationChecklist": [
+    "all nine agent directories present",
+    "role contract cards added for leadership layer",
+    "machine-readable finding register schema added",
+    "machine-readable run ledger schema added",
+    "release assembly workflow added",
+    "release notes updated"
+  ]
+}

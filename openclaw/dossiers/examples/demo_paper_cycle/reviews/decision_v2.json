@@ -1,0 +1,12 @@
+{
+  "decision_id": "demo-decision-v2",
+  "timestamp": "2026-03-13T01:00:00Z",
+  "draft_version": "v2",
+  "reviewers": ["peer-reviewer-1", "peer-reviewer-2"],
+  "overall_decision": "MAJOR",
+  "blocking_reasons": [
+    "Empirical validation not yet provided",
+    "Claim-to-evidence register not included as a concrete artifact"
+  ],
+  "notes": "Revision improved calibration. Next revision should include a concrete claim register artifact and at least one baseline comparison run." 
+}

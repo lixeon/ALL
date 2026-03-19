@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0",
+  "name": "finding-register",
+  "description": "Machine-readable reviewer and governance finding register for Academic Lobster Lab releases.",
+  "requiredFields": [
+    "release",
+    "findingId",
+    "sourceRole",
+    "severity",
+    "status",
+    "summary",
+    "requiredAction",
+    "closureTest",
+    "evidencePaths",
+    "owner"
+  ],
+  "fieldNotes": {
+    "severity": "allowed: low, medium, high, critical",
+    "status": "allowed: open, fixed, accepted-limitation, rejected-with-rationale, blocked",
+    "evidencePaths": "array of filesystem-relative or release-relative paths",
+    "owner": "role currently responsible for closure"
+  }
+}

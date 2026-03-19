@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "provenance_record_schema_v1",
+  "type": "object",
+  "required": ["source_url", "downloaded_at", "sha256", "status"],
+  "properties": {
+    "title": {"type": "string"},
+    "authors": {"type": "array", "items": {"type": "string"}},
+    "venue": {"type": "string"},
+    "year": {"type": "integer"},
+    "source_url": {"type": "string"},
+    "downloaded_at": {"type": "string"},
+    "sha256": {"type": "string"},
+    "license_note": {"type": "string"},
+    "status": {"type": "string", "enum": ["UNVERIFIED", "VERIFIED", "PARTIAL", "FAILED"]},
+    "notes": {"type": "string"}
+  }
+}

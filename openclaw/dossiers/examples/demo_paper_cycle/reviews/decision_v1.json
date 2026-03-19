@@ -1,0 +1,13 @@
+{
+  "decision_id": "demo-decision-v1",
+  "timestamp": "2026-03-13T00:00:00Z",
+  "draft_version": "v1",
+  "reviewers": ["peer-reviewer-1", "peer-reviewer-2"],
+  "overall_decision": "REJECT",
+  "blocking_reasons": [
+    "Novelty and positioning not evidenced",
+    "Evaluation plan is placeholder",
+    "No claim-to-evidence register shown"
+  ],
+  "notes": "Rejection requires revision cycle. Reproducibility chair will block release until claim-evidence mapping exists."
+}

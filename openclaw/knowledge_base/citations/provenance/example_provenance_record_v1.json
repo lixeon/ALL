@@ -1,0 +1,12 @@
+{
+  "title": "Example Paper Provenance",
+  "authors": ["Doe, Jane", "Smith, John"],
+  "venue": "NeurIPS",
+  "year": 2024,
+  "source_url": "https://arxiv.org/abs/xxxx.xxxxx",
+  "downloaded_at": "2026-03-13T00:00:00Z",
+  "sha256": "REPLACE_WITH_REAL_HASH",
+  "license_note": "arXiv preprint; check license before redistribution",
+  "status": "UNVERIFIED",
+  "notes": "Example record; replace with real metadata and hash"
+}

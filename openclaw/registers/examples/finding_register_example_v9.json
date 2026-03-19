@@ -1,0 +1,34 @@
+{
+  "release": "V9",
+  "findings": [
+    {
+      "findingId": "PR2-V9-01",
+      "sourceRole": "peer-reviewer-2",
+      "severity": "high",
+      "status": "fixed",
+      "summary": "Release packaging lacks a machine-readable way to track whether reviewer findings are actually closed.",
+      "requiredAction": "Add a finding register schema, provide one realistic example, and define closure tests in the workflow.",
+      "closureTest": "An auditor can inspect a schema, a filled example, and a workflow that names closure verification points.",
+      "evidencePaths": [
+        "openclaw/config/schemas/finding_register_schema_v1.json",
+        "openclaw/registers/examples/finding_register_example_v9.json",
+        "openclaw/templates/release_assembly_workflow.md"
+      ],
+      "owner": "distinguished-scholar"
+    },
+    {
+      "findingId": "RC-V9-01",
+      "sourceRole": "reproducibility-chair",
+      "severity": "medium",
+      "status": "accepted-limitation",
+      "summary": "The package defines registers and schemas, but it still lacks automated export from live runtime sessions.",
+      "requiredAction": "Keep claim language limited to packaging and governance support rather than full workflow automation.",
+      "closureTest": "Release notes and round note explicitly state that automation is still absent.",
+      "evidencePaths": [
+        "V9_RELEASE_NOTES.md",
+        "ROUND_NOTE_V9.md"
+      ],
+      "owner": "academy-lead"
+    }
+  ]
+}
